@@ -22,7 +22,7 @@ while(True):
    
     cv2.imshow('can',can)
     cv2.imshow('ada',ada)
-    #cv2.imshow('line',ref)
+    cv2.imshow('line',ref)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
