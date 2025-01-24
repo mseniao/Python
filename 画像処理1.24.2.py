@@ -16,9 +16,9 @@ for line in lines:
 
         # 赤線を引く
     cv2.line(vtr, (x1,y1), (x2,y2), (0,0,255), 3)
-    #cv2.imwrite('linewriter.jpg', vtr)
 
 ref = cv2.resize(vtr, dsize=None, fx=0.5, fy=0.5) #全体が映るようにリサイズ
+cv2.imwrite('linewriter.jpg', ref)
 #cv2.imshow('f',can)
 cv2.imshow('g',ref)
 cv2.waitKey(0)
