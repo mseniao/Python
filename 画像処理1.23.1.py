@@ -17,7 +17,7 @@ while(True):
 
         # 赤線を引く
         cv2.line(ref, (x1,y1), (x2,y2), (0,0,255), 3)
-        #cv2.imwrite('linewriter.jpg', ref)
+        cv2.imwrite('linewriter.jpg', ref)
    
     cv2.imshow('f',can)
     cv2.imshow('g',ref)
